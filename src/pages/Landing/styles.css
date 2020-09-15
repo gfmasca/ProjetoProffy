@@ -10,6 +10,8 @@
     background: var(--color-primary);
 }
 
+
+
 .logo-container img {
     height: 10rem;
 }
@@ -17,6 +19,7 @@
 .hero-image {
     width: 100%;
 }
+
 
 .logo-container {
     text-align: center;
@@ -46,10 +49,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
-
+    
     text-decoration: none;
     color: var(--color-button-text);
-
+    
     transition: background-color .2s;
 }
 
@@ -75,7 +78,7 @@
 
 .total-connections {
     font-size: 1.8rem;
-
+    
     display: flex;
     align-items: center;
     justify-content: center;
@@ -85,32 +88,70 @@
     margin-left: .8rem;
 }
 
-@media (min-width: 1100px) {
-    #page-landing-content {
-        max-width: 1100px;
 
+@media (max-width: 700px) {
+    * {
+        font-size: 40% !important;
+    }
+
+    .logo-container h2 {
+        font-size: 3.6rem !important;
+    }
+
+    .buttons-container a {
+        font: 700 2rem Archivo !important;
+    }
+    
+    .total-connections {
+        font-size: 1.8rem !important;
+    }
+}
+
+@media (min-width: 700px) {
+    * {
+        font-size: 29% !important;
+    }
+
+    .logo-container h2 {
+        font-size: 3.7rem !important;
+    }
+
+    .buttons-container a {
+        font: 700 2.1rem Archivo !important;
+    }
+    
+    .total-connections {
+        font-size: 1.9rem !important;
+    }
+
+}
+
+@media (min-width: 1100px) {
+    #page-landing #page-landing-content {
+        max-width: 1100px;
+        
         display: grid;
         grid-template-rows: 350px 1fr;
         grid-template-columns: 2fr 1fr 1fr;
         grid-template-areas: 
-            "logo hero hero"
-            "buttons buttons total"
+        "logo hero hero"
+        "buttons buttons total"
         ;
     }
-
+    
     .logo-container {
         grid-area: logo;
-
+        
         align-self: center;
         margin: 0;  
         text-align: left;   
     }
-
+    
     .logo-container h2 {
         text-align: initial;
         font-size: 3.6rem;
     }
-
+    
     .logo-container img {
         height: 100%;
     }
@@ -119,12 +160,12 @@
         grid-area: hero;
         justify-self: end;
     }
-
+    
     .buttons-container {
         grid-area: buttons;
         justify-content: flex-start;
     }
-
+    
     .buttons-container a {
         font-size: 2.4rem;
     }
@@ -132,10 +173,9 @@
     .buttons-container a img {
         margin-right: 2.4rem;
     }
-
+    
     .total-connections {
         grid-area: total;
         justify-self: end;
     }
 }
-
