@@ -1,7 +1,11 @@
-# ProjetoProffy
+  # ProjetoProffy
+ 
+  ## Um treinamento de desenvolvimento front-end  
 
-Esse projeto segue o aplicativo desenvolvido no NLW da Rocketseat
-
-##Tecnologias Usadas 
-
-A aplicação foi desenvolvida usando ReactJS e Typescript
+  *Esse projeto segue o aplicativo desenvolvido no NLW da Rocketseat*
+ 
+  ## Tecnologias usadas
+ 
+  - Typescript
+  - ReactJS
+  - HTML5/CSS3
